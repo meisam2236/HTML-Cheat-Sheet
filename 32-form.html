@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Tutorial</title>
+	</head>
+	<body>
+		<form action="https://google.com" method="POST">
+			<label for="username">Username:</label>
+			<input type="text" name="username" autofocus required /><br/>
+			<input type="radio" name="gender" value="male" /> Male <br/>
+			<input type="radio" name="gender" value="female" /> Female <br/>			
+			<label for="email">Email:</label>
+			<input type="email" name="email" placeholder="email@example.com" required /><br/>
+			<label for="password">Password:</label>
+			<input type="password" name="password" required /><br/>
+			<label for="situations">Situations:</label>
+			<input id="sit" type="text" list="situations" />
+			<datalist id="situations">
+				<option value="Buyer">
+				<option value="Seller">
+			</datalist><br/>
+			<label for="url">Website:</label>
+			<input id="url" name="url" type="url" placeholder="example.com" /><br/>
+			<label for="tel">Telephone:</label>
+			<input id="tel" name="tel" type="tel" placeholder="01333243456" /><br/>
+			<label for="message">About me:</label>
+			<textarea name="message"></textarea>
+			<input type="submit" value="Submit" /><br/>
+			<label for="search">Search:</label>
+			<input id="mysearch" name="searchitem" type="search" />		
+		</form>
+	</body>
+</html>

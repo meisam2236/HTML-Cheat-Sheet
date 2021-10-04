@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<canvas id="canvas1" width="400" height="300"></canvas>
+	<canvas id="canvas2" width="400" height="300"></canvas>
+	<canvas id="canvas3" width="400" height="300"></canvas>
+	<script>
+		var c1 = document.getElementById("canvas1");
+		var c2 = document.getElementById("canvas2");
+		var c3 = document.getElementById("canvas3");
+		var ctx1 = c1.getContext("2d");
+		var ctx2 = c2.getContext("2d");
+		var ctx3 = c3.getContext("2d");
+		ctx1.font="bold 22px Tahoma";
+		ctx1.textAlign="start";
+		ctx1.fillText("start", 10, 30);
+		ctx1.translate(100, 150);
+		ctx1.fillText("after translate", 10, 30);
+		ctx2.fillStyle = "#FF0000";
+		ctx2.fillRect(10, 10, 100, 100);
+		ctx2.rotate((Math.PI/180)*25);
+		ctx2.fillStyle = "#0000FF"; //rotate 25 degrees.
+		ctx2.fillRect(10, 10, 100, 100);
+		ctx3.font = "bold 22px Tahoma";
+		ctx3.textAlign = "start";
+		ctx3.fillText("start", 10, 30);
+		ctx3.scale(1.5, 4);
+		ctx3.fillText("after scale", 10, 30);
+	</script>
+</body>
+</html>
